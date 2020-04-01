@@ -26,7 +26,7 @@ export class CategoryViewComponent implements OnInit {
   ngOnInit() {
     this.categoryService
       .loadById(1)
-      .subscribe((item) => {
+      .subscribe((item:any) => {
         this.category = item
       });
   }

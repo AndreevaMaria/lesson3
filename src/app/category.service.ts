@@ -11,9 +11,9 @@ constructor(
 ) {}
 
 loadAll () {
-    return this.httpClient.get("http://iilinov-n.myjino.ru/categorys")
+    return this.httpClient.get("http://lesson-3.iilinov-n.myjino.ru/api/category")
 }
 loadById(id) {
-    return this.httpClient.get("http://iilinov-n.myjino.ru/category/" + id)
+    return this.httpClient.get("http://lesson-3.iilinov-n.myjino.ru/api/category/" + id)
 }
 }
