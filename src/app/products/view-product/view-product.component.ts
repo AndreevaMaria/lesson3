@@ -3,12 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/app/product.service';
 
-type Product = {
-  title: string,
-  desc: string,
-  price: string
-}
-
 @Component({
   selector: 'app-view-product',
   templateUrl: './view-product.component.html',

@@ -1,3 +1,12 @@
-<p>
-  category works!
-</p>
+<ul>
+  <li><a routerLink="/">На главную</a></li>
+  <li><a routerLink="/category">Категории</a></li>
+</ul>
+
+<table>
+ <tr *ngFor="let categoryItem of categorys">
+   <td>{{categoryItem.title}}</td>
+    <td>{{categoryItem.anons}}</td>
+    <td> <a [routerLink]="'/category-view'"> Подробнее </a> </td>
+  </tr>
+</table>
