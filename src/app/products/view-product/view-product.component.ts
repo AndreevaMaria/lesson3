@@ -32,7 +32,7 @@ export class ViewProductComponent implements OnInit {
   ngOnInit() {
     this.productService
       .loadById(1)
-      .subscribe((item) => {
+      .subscribe((item:any) => {
         this.product = item
       });
   }
